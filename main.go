@@ -1,10 +1,12 @@
 package main
 
-import "hello_world/variables"
+import (
+	"fmt"
+	"hello_world/variables"
+)
 
 func main() {
-
-	variables.ShowIntegers()
-	variables.RestoVariables()
-
+	estado, texto := variables.ConviertoaTexto(1558)
+	fmt.Print(estado)
+	fmt.Print(texto)
 }
